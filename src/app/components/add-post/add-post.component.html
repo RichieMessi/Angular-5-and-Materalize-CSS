@@ -1,0 +1,16 @@
+<div class="row">
+    <h1>Daily Posts</h1>
+      <form (submit)="addPost()"class="col s12">
+        <div class="row">
+          <div class="input-field col s12">
+            <input  id="post" type="text" class="validate" [(ngModel)]="post" name="post" required>
+            <label for="text">Post</label>
+          </div>
+          <div class="input-field col s12">
+            <input id="author" type="text" class="validate"  [(ngModel)]="author" name="author" required>
+            <label for="text">Author Name</label>
+          </div>
+        </div>
+        <button class="btn waves-effect waves-light btn-small pulse" value="Submit" type="submit" >Submit  <i class="material-icons right">thumb_up</i></button>
+      </form>
+    </div><br><br><br><br> 
